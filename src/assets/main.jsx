@@ -34,7 +34,7 @@ export default function Main() {
     <section className="w-screen h-screen relative overflow-hidden">
   {/* Background Image */}
   <img
-    src="src/images/download.jpeg"
+    src="/images/download.jpeg"
     alt="background"
     className="absolute top-0 left-0 w-full h-full object-cover z-0"
   />
