@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import AlbumCarousel from "../components/albumCarousel.jsx";
 import SearchBar from '../components/searchBar.jsx';
+import GenreRow from '../data/genreData.jsx';
 const lines = [
   "Lost in the noise?",
   "We tuned the static just for you",
@@ -31,7 +32,7 @@ export default function Main() {
   const textSizes = ["text-6xl", "text-4xl", "text-3xl"];
 
   return (
-    <section className="w-screen h-screen relative overflow-hidden">
+    <section className="w-screen relative">
   {/* Background Image */}
   <img
     src="/images/download.jpeg"
@@ -82,7 +83,13 @@ export default function Main() {
     <div className="w-full mt-5 flex justify-center">
       <SearchBar />
     </div>
+
+    
   </div>
+
+  
+<div className="border border-red-500"><GenreRow /></div>
+
 </section>
 
   );
