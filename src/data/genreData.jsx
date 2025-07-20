@@ -5,7 +5,7 @@ const genres = [
   { name: "Metal", artist: "Black Sabbath" },
   { name: "Hip Hop", artist: "Kanye West" },
   { name: "Pop", artist: "Justin Bieber" },
-  { name: "R&B", artist: "The Weeknd" },
+  { name: "RnB", artist: "The Weeknd" },
   { name: "Country", artist: "Chris Stapleton" },
   { name: "Jazz", artist: "Miles Davis" },
   { name: "Reggae", artist: "Bob Marley" },
@@ -57,7 +57,7 @@ export default function GenreRow() {
             )}
             <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-between p-4">
               <div>
-                <p className="text-white text-2xl md:text-3xl font-semibold font-sans">
+                <p className="text-white text-2xl md:text-2xl font-semibold font-sans opacity-60">
                   {genre.name}
                 </p>
               </div>
