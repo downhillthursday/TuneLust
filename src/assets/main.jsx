@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import AlbumCarousel from "../components/albumCarousel.jsx";
 import SearchBar from '../components/searchBar.jsx';
 import GenreRow from '../data/genreData.jsx';
+import MoodCarousel from '../components/moodCarousel.jsx';
 const lines = [
   "Lost in the noise?",
   "We tuned the static just for you",
@@ -45,7 +46,7 @@ export default function Main() {
     {/* Content Row */}
     <div className="w-full flex flex-col md:flex-row items-center justify-between max-w-6xl">
       {/* Left Text Block */}
-      <div className="w-full md:w-1/2 text-left font-semibold leading-snug text-[#c5c8c9] overflow-x-auto whitespace-nowrap">
+      <div className="w-full md:w-1/2 text-left font-semibold leading-snug text-white opacity-90 overflow-x-auto whitespace-nowrap">
         {lines.slice(0, lineIndex + 1).map((line, idx) => (
           <p
             key={idx}
@@ -87,8 +88,11 @@ export default function Main() {
     
   </div>
 
-  
-<div className="border border-red-500"><GenreRow /></div>
+  <div className="relative z-10 mt-10 px-6">
+  <GenreRow />
+  <MoodCarousel />
+</div>
+
 
 </section>
 

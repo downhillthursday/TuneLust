@@ -38,8 +38,8 @@ export default function GenreRow() {
   }, []);
 
   return (
-    <div className="w-full px-6 mt-10">
-      <h2 className="text-3xl font-bold mb-6">Discover New Genres</h2>
+    <div className="w-full px-6 mt-10 mb-16">
+      <h2 className="text-3xl text-white opacity-85 font-bold mb-6">Discover New Genres</h2>
       <div className="flex flex-wrap gap-6 justify-center">
         {genres.map((genre, index) => (
           <div
@@ -57,7 +57,7 @@ export default function GenreRow() {
             )}
             <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-between p-4">
               <div>
-                <p className="text-white text-2xl md:text-2xl font-semibold font-sans opacity-60">
+                <p className="text-white text-2xl md:text-2xl font-semibold font-sans opacity-80">
                   {genre.name}
                 </p>
               </div>
